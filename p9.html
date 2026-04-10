@@ -44,6 +44,15 @@
             min.innerHTML = (m < 10 ? "0" : "") + m;
             sec.innerHTML = (s < 10 ? "0" : "") + s;
             ampm.innerHTML = period;
+            
+            let options = {
+                weekday: 'long',
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric'
+            };
+
+            date.innerHTML = currentTime.toLocaleDateString('en-US', options);
         }
 
         updateClock(); 
