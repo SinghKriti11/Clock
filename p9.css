@@ -60,4 +60,6 @@
 .clock span::after{
     font-size: 16px;
     position: absolute;
+    bottom: -5px;
+    left: 50%;
 }
