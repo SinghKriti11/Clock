@@ -90,6 +90,15 @@
     border-radius: 10px;
 }
 
+.date{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+    letter-spacing: 1px;
+}
+
 #hrs::after{
     content: 'HOURS';
 }
