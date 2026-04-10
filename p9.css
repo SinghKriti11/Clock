@@ -76,6 +76,9 @@
     font-size: 14px;
     opacity: 0.7;
     letter-spacing: 1px;
+    background: rgba(255,255,255,0.1);
+    padding: 4px 10px;
+    border-radius: 10px;
 }
 #hrs::after{
     content: 'HOURS';
