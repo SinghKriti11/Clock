@@ -70,3 +70,6 @@
 #min::after{
     content: 'MINS';
 }
+#sec::after{
+    content: 'SEC';
+}
