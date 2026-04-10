@@ -14,7 +14,7 @@
 
 .container{
     width: 800px;
-    height: 180px;
+    height: 200px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -26,12 +26,15 @@
     height: 100%;
     background: rgba(235, 0, 255, 0.11);
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     backdrop-filter: blur(40px);
     box-shadow: 0 0 50px rgba(65, 154, 255, 0.3);
-    position: relative; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 15px;                
+    padding: 30px 20px 20px; 
 }
 
 .container::before{
@@ -58,54 +61,49 @@
     z-index: -1;
 }
 
-.clock span{
-    font-size: 80px;
-    width: 110px;
-    display: inline-block;
-    text-align: center;
-    position: relative;
-    transition: all 0.3s ease-in-out;
+.time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.clock span::after{
+.time span{
+    font-size: 80px;
+    width: 110px;
+    text-align: center;
+    position: relative;
+}
+
+.time span::after{
     font-size: 16px;
     position: absolute;
-    bottom: -20px; 
+    bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
     letter-spacing: 2px;
     color: #ccc;
 }
 
-.ampm{
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
-    font-size: 14px;
-    opacity: 0.7;
-    letter-spacing: 1px;
-    background: rgba(255,255,255,0.1);
-    padding: 4px 10px;
-    border-radius: 10px;
+#hrs::after{ content: 'HOURS'; }
+#min::after{ content: 'MINS'; }
+#sec::after{ content: 'SEC'; }
+
+.extra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; 
 }
 
 .date{
-    position: absolute;
-    bottom: -10px;   
-    left: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.ampm{
     font-size: 13px;
     opacity: 0.7;
-    letter-spacing: 1px;
-}
-
-#hrs::after{
-    content: 'HOURS';
-}
-
-#min::after{
-    content: 'MINS';
-}
-
-#sec::after{
-    content: 'SEC';
+    background: rgba(255,255,255,0.1);
+    padding: 4px 10px;
+    border-radius: 10px;
 }
