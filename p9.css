@@ -31,7 +31,6 @@
     justify-content: center;
     backdrop-filter: blur(40px);
     box-shadow: 0 0 50px rgba(65, 154, 255, 0.3);
-
     position: relative; 
 }
 
@@ -92,15 +91,11 @@
 
 .date{
     position: absolute;
-    bottom: 10px;
-    left: 20px;
-    font-size: 14px;
-    opacity: 0.8;
-    letter-spacing: 1px;
-    bottom: 5px; /* reduce overlap */
+    bottom: 5px;
     left: 20px;
     font-size: 13px;
     opacity: 0.7;
+    letter-spacing: 1px;
 }
 
 #hrs::after{
