@@ -65,6 +65,9 @@
     bottom: -5px;
     left: 50%;
     transform: translate(-50%);
+    bottom: -20px;
+    letter-spacing: 2px;
+    color: #ccc;
 }
 #hrs::after{
     content: 'HOURS';
