@@ -24,12 +24,23 @@
         let min=document.getElementById("min");
         let sec=document.getElementById("sec");
         let ampm = document.getElementById("ampm");
-        setInterval(()=>{
-        let currentTime=new Date();
-        hrs.innerHTML=(currentTime.getHours()<10?"0":"")+currentTime.getHours();
-        min.innerHTML=(currentTime.getMinutes()<10?"0":"")+currentTime.getMinutes();
-        sec.innerHTML=(currentTime.getSeconds()<10?"0":"")+currentTime.getSeconds();
-        },1000)
+        setInterval(() => {
+    let currentTime = new Date();
+
+    let h = currentTime.getHours();
+    let m = currentTime.getMinutes();
+    let s = currentTime.getSeconds();
+
+    let period = h >= 12 ? "PM" : "AM";
+    h = h % 12;
+    h = h ? h : 12;
+
+    hrs.innerHTML = (h < 10 ? "0" : "") + h;
+    min.innerHTML = (m < 10 ? "0" : "") + m;
+    sec.innerHTML = (s < 10 ? "0" : "") + s;
+    ampm.innerHTML = period;
+
+}, 1000);
 
     </script>
 </body>
