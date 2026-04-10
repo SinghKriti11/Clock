@@ -28,3 +28,9 @@
     justify-content: center;
     backdrop-filter: blur(40px);
 }
+.container::before{
+    content: '';
+    width: 180px;
+    height: 180px;
+    background: #f41b75;
+}
