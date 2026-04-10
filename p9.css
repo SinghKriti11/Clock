@@ -27,6 +27,7 @@
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(40px);
+    box-shadow: 0 0 50px rgba(65, 154, 255, 0.3);
 }
 .container::before{
     content: '';
