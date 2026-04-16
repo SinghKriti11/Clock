@@ -5,6 +5,7 @@ A modern and responsive **Digital Clock Web Application** built using **HTML, CS
 ---
 
 ## ✨ Features
+
 * 🕒 Real-time clock (updates every second)
 * 🌓 12-hour format with AM/PM indicator
 * 📅 Displays full date (Day, Month, Year)
